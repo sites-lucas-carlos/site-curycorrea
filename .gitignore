@@ -1,0 +1,11 @@
+# Referência do template (não faz parte do site)
+stratwell/
+
+# Configurações locais
+.claude/
+.playwright-mcp/
+
+# Arquivos do sistema
+Thumbs.db
+desktop.ini
+.DS_Store

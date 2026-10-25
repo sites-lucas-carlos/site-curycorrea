@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cury Correa Seguros – Corretora de seguros em Brasília</title>
+  <meta name="description" content="Corretora de seguros em Brasília que atende todo o Brasil. Comparamos mais de 30 seguradoras para encontrar o seguro certo para você, sua família e sua empresa.">
+  <meta name="theme-color" content="#062A31">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Ícones reutilizados -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 8.2c.3-.6.6-.6.9-.6h.6c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.6.8c-.1.2-.2.3 0 .6.6 1 1.5 1.9 2.6 2.4.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.4.4 0 .6-.3 1.4-1 1.8-.6.4-1.6.6-3.6-.3-1.9-.9-3.4-2.6-4.1-3.8-.7-1.3-.6-2.5-.3-3.1z" fill="currentColor"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5h.01"/></g></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 4l9 5.5M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20.5h18"/></g></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></g></symbol>
+    <symbol id="i-lifebuoy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.8"/><path d="M5.6 5.6l3.7 3.7M14.7 14.7l3.7 3.7M18.4 5.6l-3.7 3.7M9.3 14.7l-3.7 3.7"/></g></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6.5h11M9 12h11M9 17.5h11"/></g><circle cx="5" cy="6.5" r="1.3" fill="currentColor"/><circle cx="5" cy="12" r="1.3" fill="currentColor"/><circle cx="5" cy="17.5" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H10l-6 4z"/><path d="M8 9.5h8M8 12.5h5"/></g></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></g></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4.5-2 1.3a10.5 10.5 0 0 0 5.7 5.7l1.3-2 4.5 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6 8.5-6"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0-5.3 5L4 16.7 7.3 20l5.2-5.2a4 4 0 0 0 5-5.3l-2.5 2.5-2.3-.7-.7-2.3z"/></g></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18M12 9v11M12 9c-2-3.5-6-3.5-5-1 .6 1.2 3 1 5 1zM12 9c2-3.5 6-3.5 5-1-.6 1.2-3 1-5 1z"/></g></symbol>
+  </svg>
+
+  <!-- ===== MENU ===== -->
+  <header class="site-header" data-header>
+    <div class="site-header__bar">
+      <a class="brand" href="index.html" aria-label="Cury Correa Seguros – Início">
+        <img src="images/logo-simbolo.png" alt="" width="49" height="48">
+        <span class="brand__text"><span class="brand__name">Cury Correa</span><span class="brand__tag">Corretora de Seguros</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="seguros.html">Seguros</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="sinistros.html">Sinistro e 24h</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn btn--light btn--plain site-nav__cta-mobile" href="https://wa.me/5561999577714" data-wa="Olá! Vim pelo site e quero fazer uma cotação." target="_blank" rel="noopener">Cotar pelo WhatsApp</a>
+      </nav>
+      <a class="btn btn--light btn--plain site-header__cta" href="https://wa.me/5561999577714" data-wa="Olá! Vim pelo site e quero fazer uma cotação." target="_blank" rel="noopener">Fazer cotação</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== TOPO ===== -->
+    <section class="hero">
+      <img class="hero__media" src="images/hero-inicio.jpg" alt="" fetchpriority="high">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title" data-split="load">Seguro é o cuidado que você escolhe <em>hoje</em>.</h1>
+        <div class="hero__side" data-hero-side>
+          <p class="hero__lead">Comparamos as principais seguradoras do país para encontrar o seguro certo para você, sua família e sua empresa — e ficamos do seu lado quando precisar usar.</p>
+          <div class="actions">
+            <a class="btn btn--light" href="https://wa.me/5561999577714" data-wa="Olá! Vim pelo site e quero fazer uma cotação." target="_blank" rel="noopener">
+              <span class="btn__label">Cotar pelo WhatsApp</span>
+              <span class="btn__icon"><svg><use href="#i-arrow"/></svg><svg><use href="#i-arrow"/></svg></span>
+            </a>
+            <a class="btn btn--ghost" href="seguros.html">Ver seguros</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUEM SOMOS + NÚMEROS ===== -->
+    <section class="section" id="quem-somos">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill" data-reveal>Quem somos</span>
+          <h2 class="title accent" data-split="scroll">A Cury Correa é uma corretora de seguros que <em>nasceu em São Paulo</em>, se <em>consolidou em Brasília</em> e hoje <em>atende todo o Brasil</em> com informação clara e <em>atendimento próximo</em>.</h2>
+        </div>
+        <div class="stats">
+          <div class="stat" data-reveal>
+            <p class="stat__value" data-count="30" data-suffix="+">30+</p>
+            <p class="stat__text">Seguradoras parceiras para comparar e escolher a melhor proposta para você.</p>
+          </div>
+          <div class="stat" data-reveal>
+            <p class="stat__value">R$ 1</p>
+            <p class="stat__text">Por dia é quanto mais da metade dos nossos clientes paga no seguro residencial.</p>
+          </div>
+          <div class="stat" data-reveal>
+            <p class="stat__value" data-count="75" data-prefix="R$ ">R$ 75</p>
+            <p class="stat__text">Por mês é quanto mais da metade dos nossos clientes paga no seguro de vida.</p>
+          </div>
+          <div class="stat" data-reveal>
+            <p class="stat__value" data-count="24" data-suffix="h">24h</p>
+            <p class="stat__text">De assistência das seguradoras: guincho, chaveiro, eletricista, encanador e mais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="divider"></div>
+
+    <!-- ===== DESTAQUES (cards empilhados) ===== -->
+    <section class="section" id="destaques">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="pill" data-reveal>Seguros em destaque</span>
+          <h2 class="title" data-reveal>Proteção para o que <em>mais importa</em></h2>
+        </div>
+        <div class="cases">
+          <article class="case-wrap">
+            <div class="case-card" data-scale>
+              <img class="case-card__bg" src="images/seguro-auto.jpg" alt="" loading="lazy">
+              <div class="case-card__top">
+                <div class="tags">
+                  <span class="tag tag--teal">Seguro Auto</span>
+                  <span class="tag">Para você</span>
+                </div>
+                <a class="case-card__fab" href="seguros.html#auto" aria-label="Ver detalhes do Seguro Auto"><svg><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="case-card__bottom">
+                <div class="glass case-card__box">
+                  <h3>Nós cuidamos do seu carro como se fosse nosso.</h3>
+                  <p>Seguro adequado ao seu perfil e ao seu carro, com guincho, chaveiro 24h e troca de pneu sempre que precisar.</p>
+                </div>
+                <a class="btn btn--light btn--sm case-card__btn" href="seguros.html#auto">
+                  <span class="btn__label">Ver detalhes</span>
+                  <span class="btn__icon"><svg><use href="#i-arrow"/></svg><svg><use href="#i-arrow"/></svg></span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="case-wrap">
+            <div class="case-card" data-scale>
+              <img class="case-card__bg" src="images/seguro-residencial.jpg" alt="" loading="lazy">
+              <div class="case-card__top">
+                <div class="tags">
+                  <span class="tag tag--teal">Seguro Residencial</span>
+                  <span class="tag">Para sua casa</span>
+                </div>
+                <a class="case-card__fab" href="seguros.html#residencial" aria-label="Ver detalhes do Seguro Residencial"><svg><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="case-card__bottom">
+                <div class="glass case-card__box">
+                  <h3>Sua casa protegida por cerca de R$ 1 por dia.</h3>
+                  <p>Cobre incêndio, vendaval e roubo, e ainda traz assistência 24h para problemas elétricos e hidráulicos.</p>
+                </div>
+                <a class="btn btn--light btn--sm case-card__btn" href="seguros.html#residencial">
+                  <span class="btn__label">Ver detalhes</span>
+                  <span class="btn__icon"><svg><use href="#i-arrow"/></svg><svg><use href="#i-arrow"/></svg></span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="case-wrap">
+            <div class="case-card" data-scale>
+              <img class="case-card__bg" src="images/seguro-empresarial.jpg" alt="" loading="lazy">
+              <div class="case-card__top">
+                <div class="tags">
+                  <span class="tag tag--teal">Seguro Empresarial</span>
+                  <span class="tag">Para sua empresa</span>
+                </div>
+                <a class="case-card__fab" href="seguros.html#empresarial" aria-label="Ver detalhes do Seguro Empresarial"><svg><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="case-card__bottom">
+                <div class="glass case-card__box">
+                  <h3>Seu negócio protegido, do pequeno ao grande.</h3>
+                  <p>Proteção para o estabelecimento, os funcionários e os clientes, com coberturas sob medida para o seu segmento e porte.</p>
+                </div>
+                <a class="btn btn--light btn--sm case-card__btn" href="seguros.html#empresarial">
+                  <span class="btn__label">Ver detalhes</span>
+                  <span class="btn__icon"><svg><use href="#i-arrow"/></svg><svg><use href="#i-arrow"/></svg></span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="center section-foot" data-reveal>
+          <a class="btn btn--dark" href="seguros.html">
+            <span class="btn__label">Ver todos os seguros</span>
+            <span class="btn__icon"><svg><use href="#i-arrow"/></svg><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="divider"></div>
+
+    <!-- ===== TODOS OS SEGUROS (carrossel infinito) ===== -->
+    <section class="section" id="seguros">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="pill" data-reveal>Nossos seguros</span>
+          <h2 class="title" data-reveal>Encontre o <em>seu seguro</em></h2>
+        </div>
+      </div>
+      <div class="ticker" data-ticker>
+        <ul class="ticker__track" data-ticker-track>
+          <li class="seguro-card"><a href="seguros.html#auto"><img src="images/seguro-auto.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Automóvel</h3><p>Seu carro protegido do seu jeito.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#residencial"><img src="images/seguro-residencial.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Residencial</h3><p>Casa própria ou alugada.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#vida"><img src="images/seguro-vida.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Vida</h3><p>Proteção para quem você ama.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#saude"><img src="images/seguro-saude.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Saúde</h3><p>Qualidade de vida e boa rede.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#viagem"><img src="images/seguro-viagem.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Viagem</h3><p>Preocupe-se só com o roteiro.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#aluguel"><img src="images/seguro-aluguel.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Aluguel</h3><p>Alugue sem precisar de fiador.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#portateis"><img src="images/seguro-portateis.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Portáteis</h3><p>Celular, notebook e câmera.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#empresarial"><img src="images/seguro-empresarial.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Empresarial</h3><p>Do pequeno ao grande negócio.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#condominio"><img src="images/seguro-condominio.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Condomínio</h3><p>Tranquilidade para o síndico.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+          <li class="seguro-card"><a href="seguros.html#eventos"><img src="images/seguro-eventos.jpg" alt="" loading="lazy"><div class="glass seguro-card__box"><div><h3>Eventos</h3><p>Do início ao fim da festa.</p></div><span class="seguro-card__go"><svg><use href="#i-arrow"/></svg></span></div></a></li>
+        </ul>
+        <div class="ticker__dots" data-ticker-dots aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="divider"></div>
+
+    <!-- ===== POR QUE A CURY CORREA ===== -->
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill" data-reveal>Por que a Cury Correa</span>
+          <h2 class="title" data-reveal>Seguro <em>sem dor de cabeça</em></h2>
+        </div>
+        <div class="services">
+          <div class="service-card" data-reveal>
+            <span class="icon"><svg><use href="#i-info"/></svg></span>
+            <div class="service-card__body">
+              <h3>Informação clara</h3>
+              <p>Explicamos cada cobertura com precisão, para você saber exatamente o que está contratando.</p>
+            </div>
+          </div>
+          <div class="service-card" data-reveal>
+            <span class="icon"><svg><use href="#i-building"/></svg></span>
+            <div class="service-card__body">
+              <h3>As principais seguradoras</h3>
+              <p>Comparamos mais de 30 seguradoras e buscamos as melhores condições de pagamento.</p>
+            </div>
+          </div>
+          <div class="service-cta" data-reveal>
+            <img class="service-cta__bg" src="images/atendimento.jpg" alt="" loading="lazy">
+            <div class="glass service-cta__box">
+              <h3>Fale com um <em>corretor</em></h3>
+              <p>Seg. a sáb., das 9h às 18h.</p>
+              <a class="btn btn--light" href="https://wa.me/5561999577714" data-wa="Olá! Vim pelo site e quero falar com um corretor." target="_blank" rel="noopener">
+                <span class="btn__label">Chamar no WhatsApp</span>
+                <span class="btn__icon"><svg><use href="#i-arrow"/></svg><svg><use href="#i-arrow"/></svg></span>
+              </a>
+            </div>
+          </div>
+          <div class="service-card" data-reveal>
+            <span class="icon"><svg><use href="#i-user"/></svg></span>
+            <div class="service-card__body">
+              <h3>Atendimento personalizado</h3>
+              <p>Avaliamos seus riscos, necessidades, custos e benefícios antes de indicar um seguro.</p>
+            </div>
+          </div>
+          <div class="service-card" data-reveal>
+            <span class="icon"><svg><use href="#i-lifebuoy"/></svg></span>
+            <div class="service-card__body">
+              <h3>Apoio no sinistro</h3>
+              <p>Acompanhamos seu sinistro do início ao fim e orientamos o uso da assistência 24h.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="divider"></div>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill" data-reveal>Como funciona</span>
+          <h2 class="title accent" data-split="scroll">Contratar seu seguro é <em>simples</em>: você conta o que precisa, nós <em>comparamos</em> e você escolhe com <em>tranquilidade</em>.</h2>
+        </div>
+        <div class="approach">
+          <div class="approach__media">
+            <img src="images/corretor.jpg" alt="Corretor e cliente fechando um seguro com um aperto de mão" loading="lazy">
+          </div>
+          <ol class="steps">
+            <li class="step-wrap">
+              <div class="step" data-scale>
+                <div class="step__top">
+                  <span class="icon"><svg><use href="#i-list"/></svg></span>
+                  <span class="step__num">01</span>
+                </div>
+                <div class="step__body">
+                  <h3>Escolha o seguro</h3>
+                  <p>Veja os seguros para você, sua família ou sua empresa e escolha o que faz sentido.</p>
+                </div>
+              </div>
+            </li>
+            <li class="step-wrap">
+              <div class="step" data-scale>
+                <div class="step__top">
+                  <span class="icon"><svg><use href="#i-chat"/></svg></span>
+                  <span class="step__num">02</span>
+                </div>
+                <div class="step__body">
+                  <h3>Fale com a gente</h3>
+                  <p>Mande uma mensagem no WhatsApp ou ligue. É rápido e sem compromisso.</p>
+                </div>
+              </div>
+            </li>
+            <li class="step-wrap">
+              <div class="step" data-scale>
+                <div class="step__top">
+                  <span class="icon"><svg><use href="#i-doc"/></svg></span>
+                  <span class="step__num">03</span>
+                </div>
+                <div class="step__body">
+                  <h3>Receba a melhor proposta</h3>
+                  <p>Pesquisamos nas principais seguradoras e enviamos as melhores ofertas do mercado.</p>
+                </div>
+              </div>
+            </li>
+            <li class="step-wrap">
+              <div class="step" data-scale>
+                <div class="step__top">
+                  <span class="icon"><svg><use href="#i-shield"/></svg></span>
+                  <span class="step__num">04</span>
+                </div>
+                <div class="step__body">
+                  <h3>Conte com a gente</h3>
+                  <p>Depois de contratar, seguimos ao seu lado na renovação e quando precisar usar o seguro.</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="divider"></div>
+
+    <!-- ===== SEGURADORAS PARCEIRAS ===== -->
+    <section class="section" id="seguradoras">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="pill" data-reveal>Seguradoras parceiras</span>
+          <h2 class="title" data-reveal>Trabalhamos com as <em>melhores</em></h2>
+        </div>
+        <ul class="logos">
+          <li data-reveal><img src="images/seguradoras/porto-seguro.png" alt="Porto Seguro" loading="lazy"></li>
+          <li data-reveal><img src="images/seguradoras/allianz.png" alt="Allianz" loading="lazy"></li>
+          <li data-reveal><img src="images/seguradoras/tokio-marine.png" alt="Tokio Marine" loading="lazy"></li>
+          <li data-reveal><img src="images/seguradoras/sulamerica.png" alt="SulAmérica" loading="lazy"></li>
+          <li data-reveal><img src="images/seguradoras/mapfre.png" alt="Mapfre" loading="lazy"></li>
+          <li data-reveal><img src="images/seguradoras/sompo.png" alt="Sompo Seguros" loading="lazy"></li>
+          <li data-reveal><img src="images/seguradoras/itau.png" alt="Itaú Seguros" loading="lazy"></li>
+          <li data-reveal><img src="images/seguradoras/liberty.png" alt="Liberty Seguros" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CHAMADA FINAL ===== -->
+    <div class="cta-wrap">
+      <section class="cta">
+        <img class="cta__bg" src="images/cta.jpg" alt="" loading="lazy">
+        <div class="container">
+          <div class="glass cta__box" data-reveal>
+            <div class="cta__text">
+              <h2 class="title">Quer a melhor proposta de <em>seguro</em>?</h2>
+              <p>Fale com um corretor agora e receba uma cotação das principais seguradoras do mercado, sem compromisso.</p>
+            </div>
+            <div class="actions">
+              <a class="btn btn--light" href="https://wa.me/5561999577714" data-wa="Olá! Vim pelo site e quero fazer uma cotação." target="_blank" rel="noopener">
+                <span class="btn__label">Cotar pelo WhatsApp</span>
+                <span class="btn__icon"><svg><use href="#i-arrow"/></svg><svg><use href="#i-arrow"/></svg></span>
+              </a>
+              <a class="cta__phone" href="tel:+556133640477">ou ligue (61) 3364-0477</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="brand" href="index.html" aria-label="Cury Correa Seguros – Início">
+            <img src="images/logo-simbolo.png" alt="" width="49" height="48" loading="lazy">
+            <span class="brand__text"><span class="brand__name">Cury Correa</span><span class="brand__tag">Corretora de Seguros</span></span>
+          </a>
+          <p>Corretora de seguros em Brasília, atendendo todo o Brasil com informação clara e atendimento de qualidade.</p>
+          <a class="site-footer__insta" href="https://www.instagram.com/curycorreaseguros/" target="_blank" rel="noopener"><svg><use href="#i-instagram"/></svg>@curycorreaseguros</a>
+        </div>
+        <div class="site-footer__col">
+          <h3>Menu</h3>
+          <nav class="site-footer__links" aria-label="Rodapé">
+            <a href="index.html">Início</a>
+            <a href="seguros.html">Seguros</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="sinistros.html">Sinistro e 24h</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+        </div>
+        <div class="site-footer__col">
+          <h3>Seguros</h3>
+          <div class="site-footer__links">
+            <a href="seguros.html#auto">Automóvel</a>
+            <a href="seguros.html#residencial">Residencial</a>
+            <a href="seguros.html#vida">Vida</a>
+            <a href="seguros.html#saude">Saúde</a>
+            <a href="seguros.html#empresarial">Empresarial</a>
+            <a href="seguros.html">Todos os seguros</a>
+          </div>
+        </div>
+        <div class="site-footer__col">
+          <h3>Contato</h3>
+          <div class="site-footer__links">
+            <a href="https://wa.me/5561999577714" data-wa="Olá! Vim pelo site e quero falar com um corretor." target="_blank" rel="noopener">WhatsApp (61) 99957-7714</a>
+            <a href="tel:+556133640477">(61) 3364-0477</a>
+            <a href="mailto:contato@curycorreaseguros.com.br">contato@curycorreaseguros.com.br</a>
+            <p>CLN 311, Bloco E, Sala 107 – Asa Norte, Brasília – DF, 70757-550</p>
+            <p>Seg. a sáb., das 9h às 18h</p>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span data-year>2026</span> Cury Correa Corretora de Seguros · CNPJ 21.719.410/0001-67</p>
+        <p><a href="sinistros.html">Sinistro e assistência 24h</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5561999577714" data-wa="Olá! Vim pelo site e quero falar com um corretor." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
